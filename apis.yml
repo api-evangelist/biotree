@@ -1,7 +1,14 @@
 aid: biotree
-name: biotree
-description: biotree is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Biotree
+description: Biotree (Shanghai Biotree Biomedical Technology, 百趣生物) is a Shanghai-based
+  life-sciences company founded in 2012 that provides mass-spectrometry-driven metabolomics,
+  proteomics, transcriptomics, and multi-omics products and services. It operates non-targeted
+  and high-throughput targeted metabolomics platforms, single-cell and spatial omics,
+  pharmaceutical protein characterization, clinical diagnostic test kits, and CDMO services,
+  backed by a proprietary compound spectral library of 20,000+ standards, automated
+  sample-preparation systems (Starlid), a LIMS, and the MAPS cloud analysis portal.
+  Surfaced as a portfolio company of the venture firm Qiming and profiled in the API
+  Evangelist network. No public developer API or specification is published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/biotree/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,30 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.biotree.cn/uploads/ueditor/20220509/7196299e7d2a1e196b1be8fb501962a7.svg
 tags:
 - Company
+- Life Sciences
+- Metabolomics
+- Proteomics
+- Multi-Omics
+- Mass Spectrometry
+- Biotechnology
+- CDMO
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/biotree-domain-security.yml
 - type: Website
-  url: https://biotree.cn
+  url: https://www.biotree.cn/
+- type: Blog
+  url: https://www.biotree.cn/group.html
+- type: Support
+  url: https://www.biotree.cn/contact.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
